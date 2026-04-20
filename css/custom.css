@@ -1,0 +1,78 @@
+/* In order to call font in css we fontface */
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/static/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Battambang";
+    src: url("../fonts/Battambang/Battambang-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Kolen";
+    src: url("../fonts/Koulen/Koulen-Regular.ttf");
+}
+
+body {
+    font-family: "Battambang", "Roboto";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Kolen", "Roboto";
+}
+
+a.nav-link.active,
+a.nav-link {
+    font-family: "Kolen", "Roboto" !important;
+}
+
+a.nav-link {
+    color: rgb(8, 8, 111);
+} 
+
+a.nav-link:hover,
+a.nav-link.active {
+    color: rgb(86, 6, 9) !important;
+}
+img.w-100.category_img {
+    aspect-ratio: 3 / 3;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+img.img-ads {
+    height: 200px;
+    object-fit: cover;
+}
+.p_card {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+.footer_text h5,.footer_text a{
+    color: #fff !important;
+}
+.footer_text a:hover{
+    color: #b40808 !important;
+}
+.footer_text h5:hover{
+    color: #c2aa0c !important;
+}
+
+#mini-cart{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#dc3545;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  cursor:pointer;
+  z-index:9999;
+}
