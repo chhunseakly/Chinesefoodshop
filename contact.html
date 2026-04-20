@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us - Chinese Food</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fff8f0;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+
+      .info {
+        background: #ffe4c4;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .info h2 {
+        color: #b22222;
+      }
+
+      .form-box {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .form-box h2 {
+        color: #b22222;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        background: #b22222;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background: #8b1a1a;
+      }
+
+      footer {
+        text-align: center;
+        padding: 15px;
+        background: #b22222;
+        color: white;
+        margin-top: 30px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logos/logo.png" width="150px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="index.html"
+                  style="color: rgb(255, 255, 255)"
+                  >ទំព័រដើម</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="about.html"
+                  style="color: rgb(255, 255, 255)"
+                  >អំពីពួកយើង</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contact.html"
+                  style="color: rgb(255, 255, 255)"
+                  >ទំនាក់ទំនង</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Left side: Info -->
+      <div class="info">
+        <h2>Get in Touch</h2>
+        <p>
+          We’d love to hear from you! Whether you have a question about our
+          menu, orders, or anything else.
+        </p>
+
+        <p><strong>📍 Address:</strong> Phnom Penh, Cambodia</p>
+        <p><strong>📧 Email:</strong> chinesefood@email.com</p>
+        <p><strong>📞 Phone:</strong> +855 123 456 78</p>
+
+        <h3>Opening Hours</h3>
+        <p>Mon - Sun: 8:00 AM - 10:00 PM</p>
+      </div>
+
+      <!-- Right side: Form -->
+      <div class="form-box">
+        <h2>Send Message</h2>
+
+        <form onsubmit="sendMessage(event)">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>© 2026 Chinese Food Website</footer>
+
+    <script>
+      function sendMessage(event) {
+        event.preventDefault();
+        alert("Message sent successfully!");
+      }
+    </script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+  </body>
+</html>
